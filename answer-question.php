@@ -48,17 +48,10 @@ else
   $select_row = mysql_fetch_assoc($select_rating);
   $questions_answered = $select_row['questions_answered'];
   $questions_asked = $select_row['questions_asked'];
-
   $rating = ($questions_answered*2 + $questions_asked)/100;
-
   mysql_query("UPDATE profile set rating= '$rating' where user_name = '$user_name'");
-
-
 //----------------------------------------------------------------------
-
-
   mysql_close($connection);
   echo '<META http-equiv="refresh" content="0;URL=http://forum.tryitbuddy.com/question.php?id='.$question_id.'">';
-
 }
 ?>
