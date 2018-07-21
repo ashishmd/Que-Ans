@@ -19,7 +19,6 @@ session_start();
             </div>
 
             <div class="col-md-4" style="box-shadow: 10px 10px 5px #888888; background-color: #F7F7F7; padding : 30px 25px 80px 25px; border-radius:20px; margin-bottom:20px; border-shadow: 0px,1px,1px ">
-            	<p></p>
                 <h1 class="text-center">Reset Password</h1>
                 <form method="post" action="reset.php">
                     <div class= "form-group" >
